@@ -4,29 +4,32 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
+  <title>Administración de Expedición</title>
+  <link rel="icon" type="image/png" href="images/logo_sintexto.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
-  <h1>Hello, world!</h1>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+
 
 
 
   <div class="container-fluid mt-4">
     <div class="row g-4">
       <aside class="col-12 col-md-4 col-lg-3">
-        <div class="p-4 bg-light rounded-4 shadow-sm sticky-md-top" style="top: 20px;">
+        <div class="p-4 bg-light rounded-4 shadow-sm sticky-md-top"  style="top: 20px;">
           <a class="navbar-brand" href="#">
-            <img src="images/logo.png" alt="Bootstrap" width="300">
+            <img src="images/logo_sinfondo.png" alt="Bootstrap" width="300">
           </a>
           <h5 class="fw-bold">Expedición</h5>
           <nav class="nav flex-column">
-            <a class="nav-link link-dark active" href="#">🏔️ El Nanga Parbat</a>
+            <a class="nav-link link-dark active" href="#">🏔️ Vertientes</a>
             <a class="nav-link link-secondary" href="#">🧗 Equipo necesario</a>
             <a class="nav-link link-secondary" href="#">📅 Calendario</a>
           </nav>
@@ -35,37 +38,65 @@
 
       <main class="col-12 col-md-8 col-lg-9">
         <div class="p-5 bg-white border border-light-subtle shadow-sm rounded-4">
-          <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75"
-            aria-valuemin="0" aria-valuemax="100">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>
-          </div>
-          <table class="table table-striped">
+
+
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Expediciones 2026</a></li>
+              <li class="breadcrumb-item"><a href="#">Nanga Parbat Invernal</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Participantes</li>
+            </ol>
+          </nav>
+          <h1 class="display-4 fw-bold animate__animated animate__zoomInDown">
+            Equipo de Alpinistas
+          </h1>
+
+          <table class="table table-hover mt-4">
             <thead>
               <tr>
                 <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Apellido</th>
+                <th scope="col">Condiciones Fisicas</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
+                <th scope="row" class="align-middle">1</th>
+                <td class="align-middle">Maialen</td>
+                <td class="align-middle">Perez</td>
+                <td class="align-middle">
+                  <button type="button" class="btn btn-info btn-sm fw-bold shadow-sm text-white px-3 rounded-pill"
+                    data-bs-toggle="popover" data-bs-trigger="hover focus"
+                    data-bs-title="Estado Médico" 
+                    data-bs-content="Saturación O2: 98%. Tensión: 12/8. Último chequeo: 12/05/2024  Observaciones: En buen estado.  Escaladas Previa: Cerro Torre (2022), Gasherbrum IV (2023).">
+                    <i class="bi bi-heart-pulse-fill me-1"></i> BIO
+                  </button>
+                </td>
               </tr>
               <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
+                <th scope="row" class="align-middle">2</th>
+                <td class="align-middle">Miren</td>
+                <td class="align-middle">Mailharin</td>
+                <td class="align-middle">
+                  <button type="button" class="btn btn-info btn-sm fw-bold shadow-sm text-white px-3 rounded-pill"
+                    data-bs-toggle="popover" data-bs-title="Estado Médico" data-bs-trigger="hover focus"
+                    data-bs-content="Saturación O2: 98%. Tensión: 12/8. Último chequeo: 12/05/2024  Observaciones: En buen estado.  Escaladas Previa: Annapurna III (2022), Torre Eigher (2023).">
+                    <i class="bi bi-heart-pulse-fill me-1"></i> BIO
+                  </button>
+                </td>
               </tr>
               <tr>
-                <th scope="row">3</th>
-                <td>John</td>
-                <td>Doe</td>
-                <td>@social</td>
+                <th scope="row" class="align-middle">3</th>
+                <td class="align-middle">Iratxe</td>
+                <td class="align-middle">Lasa</td>
+                <td class="align-middle">
+                  <button type="button" class="btn btn-info btn-sm fw-bold shadow-sm text-white px-3 rounded-pill"
+                    data-bs-toggle="popover" data-bs-title="Estado Médico" data-bs-trigger="hover focus"
+                    data-bs-content="Saturación O2: 98%. Tensión: 12/8. Último chequeo: 12/05/2024  Observaciones: En buen estado.  Escaladas Previa: Everest (2017), Makalu (2025).">
+                    <i class="bi bi-heart-pulse-fill me-1"></i> BIO
+                  </button>
+                </td>
               </tr>
             </tbody>
           </table>
@@ -82,7 +113,20 @@
               <i class="bi bi-person-x"></i> Eliminar Alpinista
             </button>
           </div>
+
+          <h6 class="display-6 fw-bold n">
+            Plazas ocupadas
+          </h6>
+
+          <div class="progress" data-bs-toggle="tooltip" data-bs-placement="top"
+            title="70% de las plazas ocupadas" role="progressbar" aria-label="Animated striped example"
+            aria-valuenow="75"
+            aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>
+          </div>
           <!-- Button trigger modal -->
+
+
 
 
           <!-- Modal 1 -->
@@ -150,17 +194,59 @@
     </div>
 
 
-    <!-- Vertically centered modal -->
-    <div class="modal-dialog modal-dialog-centered">
-      ...
-    </div>
 
-    <!-- Vertically centered scrollable modal -->
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-      ...
-    </div>
+
+
   </div>
 
+  <!--footer-->
+    <footer class="bg-dark text-light mt-5">
+        <div class="container py-5">
+            <div class="row text-center text-md-start">
+                <div class="col-12 col-md-4 mb-4 mb-md-0">
+                    <h6 class="text-uppercase fw-bold mb-4">Seguridad en Montaña</h6>
+                    <p><a href="#" class="text-secondary link-light text-decoration-none">Declaración de
+                            Responsabilidad</a></p>
+                    <p><a href="#" class="text-secondary link-light text-decoration-none">Requisitos de Alpinismo</a>
+                    </p>
+                    <p><a href="#" class="text-secondary link-light text-decoration-none">Condiciones de Uso</a></p>
+                </div>
+
+                <div class="col-12 col-md-4 mb-4 mb-md-0">
+                    <h6 class="text-uppercase fw-bold mb-4">Exploración</h6>
+                    <p><a href="#" class="text-secondary link-light text-decoration-none">Diario de Expedición</a></p>
+                    <p><a href="#" class="text-secondary link-light text-decoration-none">Hitos Históricos</a></p>
+                    <p><a href="#" class="text-secondary link-light text-decoration-none">Galería Multimedia</a></p>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Logística y Base</h6>
+                    <p><a href="#" class="text-secondary link-light text-decoration-none">Permisos de Ascensión</a></p>
+                    <p><a href="#" class="text-secondary link-light text-decoration-none">Clima en Tiempo Real</a></p>
+                    <p><a href="#" class="text-secondary link-light text-decoration-none">Contacto de Base</a></p>
+                </div>
+
+            </div>
+
+            <div class="text-center pt-5 mt-4 border-top border-secondary">
+                <small class="text-secondary">© 2026 Nanga Parbat Project. La montaña no tiene piedad, prepárate
+                    bien.</small>
+            </div>
+        </div>
+    </footer>
+  <script>
+
+
+
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+
+    // Activar Tooltips
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+
+  </script>
 </body>
 
 </html>
