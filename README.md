@@ -1,2 +1,0 @@
-# ProyectoBootstrap
-Proyecto de Bootstrap
