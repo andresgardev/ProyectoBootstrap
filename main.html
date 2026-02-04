@@ -19,6 +19,7 @@
 <body>
     <!--barra de navegacion-->
     <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top ">
+         <!--logo-->
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="images/logo_sinfondo.png" alt="Bootstrap" width="150">
@@ -28,24 +29,23 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                     <!--logo home-->
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house-fill"></i></a>
                     </li>
-
+                     <!--barra desplegable-->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Dropdown
+                            Expediciones Completadas
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">Ruta Diamir 2023</a></li>
+                            <li><a class="dropdown-item" href="#">Ruta Rupal 2024</a></li>
+                            <li><a class="dropdown-item" href="#">Ruta Invernal 2025</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -59,6 +59,7 @@
                         </div>
                     </li>
                 </ul>
+                 <!--buscador-->
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                     <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
@@ -100,7 +101,7 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-
+         <!--titulo +subtitulo-->
         <div class="position-absolute top-50 start-50 translate-middle text-center text-white w-75 z-2">
 
             <h1 class="display-1 fw-bold animate__animated animate__zoomInDown">
@@ -115,6 +116,8 @@
         </div>
 
     </header>
+
+     <!--bloque texto + imagen-->
     <div class="container-lg border-0 shadow-lg rounded-4 bg-dark text-light overflow-hidden my-5">
         <div class="row align-items-center">
             <div class="col-lg-6 p-0">
@@ -137,6 +140,7 @@
             </div>
         </div>
     </div>
+     <!--cartas-->
 
     <div class="container my-5">
         <div class="row g-4">
@@ -312,7 +316,7 @@
             </div>
 
             <div class="col-lg-6 ps-lg-5">
-                <img src="images/usuario.webp" class="d-block w-100 object-fit-cover" style="height: 800px;">
+                <img src="images/usuario2.jpg" class="d-block w-100 object-fit-cover" style="height: 800px;">
             </div>
 
 

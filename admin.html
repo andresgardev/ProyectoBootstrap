@@ -19,10 +19,11 @@
 
 
 
-
+ <!--contenedor web-->
   <div class="container-fluid mt-4">
     <div class="row g-4">
       <aside class="col-12 col-md-4 col-lg-3">
+         <!--barra de navegacion lateral-->
         <div class="p-4 bg-light rounded-4 shadow-sm sticky-md-top"  style="top: 20px;">
           <a class="navbar-brand" href="#">
             <img src="images/logo_sinfondo.png" alt="Bootstrap" width="300">
@@ -40,6 +41,7 @@
         <div class="p-5 bg-white border border-light-subtle shadow-sm rounded-4">
 
 
+           <!--breadcrum -->
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="#">Expediciones 2026</a></li>
@@ -47,9 +49,12 @@
               <li class="breadcrumb-item active" aria-current="page">Participantes</li>
             </ol>
           </nav>
+           <!--titulo-->
           <h1 class="display-4 fw-bold animate__animated animate__zoomInDown">
             Equipo de Alpinistas
           </h1>
+
+           <!--tabla-->
 
           <table class="table table-hover mt-4">
             <thead>
@@ -101,7 +106,7 @@
             </tbody>
           </table>
 
-
+           <!--botones +(modales)-->
           <div class="d-flex gap-2 mb-4">
             <button type="button" class="btn btn-success d-flex align-items-start gap-2" data-bs-toggle="modal"
               data-bs-target="#modalAnadir">
@@ -117,14 +122,14 @@
           <h6 class="display-6 fw-bold n">
             Plazas ocupadas
           </h6>
-
+           <!--barra de progreso-->
           <div class="progress" data-bs-toggle="tooltip" data-bs-placement="top"
             title="70% de las plazas ocupadas" role="progressbar" aria-label="Animated striped example"
             aria-valuenow="75"
             aria-valuemin="0" aria-valuemax="100">
             <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>
           </div>
-          <!-- Button trigger modal -->
+          
 
 
 
@@ -237,7 +242,7 @@
   <script>
 
 
-
+    // Activar Popovers
     const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
     const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
 
